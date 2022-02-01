@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ukrmowazno/ui/mowa_tests.dart';
+import 'package:ukrmowazno/ui/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,9 +14,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: true,
-      initialRoute: '/tests',
+      initialRoute: '/main',
       routes: {
-        //'/main': (context) => ,
+        '/main': (context) => const MainScreen(),
         '/tests': (context) => const MyHomePage(
               title: 'aboba',
             ),
