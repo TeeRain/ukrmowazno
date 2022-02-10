@@ -62,97 +62,208 @@ class MainScreen extends StatelessWidget {
       home: Scaffold(
         resizeToAvoidBottomInset: false,
         body: SingleChildScrollView(
-          child: Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
-                gradient: LinearGradient(
-                    begin: Alignment.topRight,
-                    end: Alignment.bottomLeft,
-                    colors: [_gradientFirstColor, _secondaryColor])),
-            child: Column(
-              children: [
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.2,
-                  child: SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        _buildButtonRounded("button", 0.375, 0.075),
-                        _buildButtonRounded("button", 0.375, 0.075),
-                        _buildButtonRounded("button", 0.375, 0.075),
-                        _buildButtonRounded("button", 0.375, 0.075),
-                        _buildButtonRounded("button", 0.375, 0.075),
-                        _buildButtonRounded("button", 0.375, 0.075),
-                        _buildButtonRounded("button", 0.375, 0.075),
-                      ],
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.8,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SizedBox(
-                        width: MediaQuery.of(context).size.width * 0.75,
-                        child: Column(
+          child: Column(
+            children: [
+              Row(
+                //app bar
+                children: [
+                  Container(
+                    child: Row(children: [
+                      InkWell(
+                        onTap: () {}, //user interaction
+                        child: Row(
                           children: [
-                            Padding(padding: EdgeInsets.all(10)),
-                            Row(
-                              children: [_buildButton("button", 0.75, 0.125)],
+                            Container(
+                              margin: EdgeInsets.only(left: 10, right: 10),
+                              child: Icon(
+                                Icons.ac_unit,
+                                size: 40,
+                                color: Colors.white,
+                              ),
+                              height: 60,
+                              width: 60,
+                              decoration: BoxDecoration(
+                                  color: Colors.red,
+                                  borderRadius: BorderRadius.circular(40)),
                             ),
-                            Padding(padding: EdgeInsets.all(10)),
-                            Row(
-                              children: [_buildButton("button", 0.75, 0.125)],
-                            ),
-                            Padding(padding: EdgeInsets.all(10)),
-                            Row(
-                              children: [
-                                _buildButton("button", 0.33, 0.17),
-                                const Spacer(),
-                                Column(
-                                  children: [
-                                    _buildButton("button", 0.33, 0.075),
-                                    const Divider(),
-                                    _buildButton("button", 0.33, 0.075)
-                                  ],
-                                ),
-                              ],
-                            ),
-                            Padding(padding: EdgeInsets.all(10)),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Column(
-                                  children: [
-                                    Icon(
-                                      Icons.circle,
-                                      size: 100,
-                                    )
-                                  ],
-                                ),
-                                Spacer(),
-                                Column(
-                                  children: [
-                                    _buildButtonRounded("Text", 0.1, 0.05),
-                                    Padding(padding: EdgeInsets.only(top: 5)),
-                                    _buildButtonRounded("Text", 0.1, 0.05),
-                                    Padding(padding: EdgeInsets.only(top: 5)),
-                                    _buildButtonRounded("Text", 0.1, 0.05),
-                                  ],
-                                ),
-                              ],
+                            Text(
+                              "user",
+                              style: TextStyle(
+                                  color: Colors.red,
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.bold),
                             )
                           ],
                         ),
                       ),
-                    ],
+                      const Spacer(),
+                      Row(
+                        // buttons
+                        children: [
+                          InkWell(
+                            onTap: () {
+                              print("Button 1");
+                            },
+                            child: Container(
+                              height: 40,
+                              width: 40,
+                              child: Icon(
+                                Icons.ac_unit,
+                                color: Colors.red,
+                                size: 30,
+                              ),
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(40),
+                                  border:
+                                      Border.all(color: Colors.red, width: 2)),
+                            ),
+                          ),
+                          InkWell(
+                            onTap: (() {
+                              print("Button 2");
+                            }),
+                            child: Container(
+                              margin: EdgeInsets.only(left: 10, right: 10),
+                              height: 40,
+                              width: 40,
+                              child: Icon(
+                                Icons.ac_unit,
+                                color: Colors.red,
+                                size: 30,
+                              ),
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(40),
+                                  border:
+                                      Border.all(color: Colors.red, width: 2)),
+                            ),
+                          ),
+                          InkWell(
+                            onTap: () {
+                              print("Button 3");
+                            },
+                            child: Container(
+                              margin: EdgeInsets.only(right: 10),
+                              height: 40,
+                              width: 40,
+                              child: Icon(
+                                Icons.ac_unit,
+                                color: Colors.red,
+                                size: 30,
+                              ),
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(40),
+                                  border:
+                                      Border.all(color: Colors.red, width: 2)),
+                            ),
+                          )
+                        ],
+                      )
+                    ]),
+                    width: MediaQuery.of(context).size.width,
+                    height: 100,
+                  )
+                ],
+              ),
+              Row(
+                // main container
+                children: [
+                  Container(
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                      borderRadius: const BorderRadius.only(
+                        topLeft: Radius.circular(40),
+                        topRight: Radius.circular(40),
+                        bottomLeft: Radius.zero,
+                        bottomRight: Radius.zero,
+                      ),
+                      border: Border.all(width: 0, color: Colors.transparent),
+                    ),
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.2,
+                          child: SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                _buildButtonRounded("button", 0.375, 0.075),
+                                _buildButtonRounded("button", 0.375, 0.075),
+                                _buildButtonRounded("button", 0.375, 0.075),
+                                _buildButtonRounded("button", 0.375, 0.075),
+                                _buildButtonRounded("button", 0.375, 0.075),
+                                _buildButtonRounded("button", 0.375, 0.075),
+                                _buildButtonRounded("button", 0.375, 0.075),
+                              ],
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.8,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              SizedBox(
+                                width: MediaQuery.of(context).size.width * 0.75,
+                                child: Column(
+                                  children: [
+                                    const Padding(padding: EdgeInsets.all(10)),
+                                    Row(
+                                      children: [
+                                        _buildButton("button", 0.75, 0.125)
+                                      ],
+                                    ),
+                                    const Padding(padding: EdgeInsets.all(10)),
+                                    Row(
+                                      children: [
+                                        _buildButton("button", 0.75, 0.125)
+                                      ],
+                                    ),
+                                    const Padding(padding: EdgeInsets.all(10)),
+                                    Row(
+                                      children: [
+                                        _buildButton("button", 0.33, 0.17),
+                                        const Spacer(),
+                                        Column(
+                                          children: [
+                                            _buildButton("button", 0.33, 0.075),
+                                            const Divider(),
+                                            _buildButton("button", 0.33, 0.075)
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Column(
+                                          children: [
+                                            Icon(
+                                              Icons.circle,
+                                              size: 110,
+                                            )
+                                          ],
+                                        ),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
-            ),
+                ],
+              ),
+            ],
           ),
         ),
       ),
