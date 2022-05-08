@@ -99,15 +99,15 @@ class MainScreen extends StatelessWidget {
                         width: MediaQuery.of(context).size.width * 0.75,
                         child: Column(
                           children: [
-                            Padding(padding: EdgeInsets.all(10)),
+                            const Padding(padding: EdgeInsets.all(10)),
                             Row(
                               children: [_buildButton("button", 0.75, 0.125)],
                             ),
-                            Padding(padding: EdgeInsets.all(10)),
+                            const Padding(padding: EdgeInsets.all(10)),
                             Row(
                               children: [_buildButton("button", 0.75, 0.125)],
                             ),
-                            Padding(padding: EdgeInsets.all(10)),
+                            const Padding(padding: EdgeInsets.all(10)),
                             Row(
                               children: [
                                 _buildButton("button", 0.33, 0.17),
@@ -121,25 +121,27 @@ class MainScreen extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            Padding(padding: EdgeInsets.all(10)),
+                            const Padding(padding: EdgeInsets.all(10)),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Column(
-                                  children: [
+                                  children: const [
                                     Icon(
                                       Icons.circle,
                                       size: 100,
                                     )
                                   ],
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 Column(
                                   children: [
                                     _buildButtonRounded("Text", 0.1, 0.05),
-                                    Padding(padding: EdgeInsets.only(top: 5)),
+                                    const Padding(
+                                        padding: EdgeInsets.only(top: 5)),
                                     _buildButtonRounded("Text", 0.1, 0.05),
-                                    Padding(padding: EdgeInsets.only(top: 5)),
+                                    const Padding(
+                                        padding: EdgeInsets.only(top: 5)),
                                     _buildButtonRounded("Text", 0.1, 0.05),
                                   ],
                                 ),
