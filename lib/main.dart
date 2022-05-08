@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: true,
-      initialRoute: '/main',
+      initialRoute: '/m',
       routes: {
-        '/main': (context) => const MainScreen(),
-        '/tests': (context) => const MyHomePage(
+        '/m': (context) => const MainScreen(),
+        '/t': (context) => const MyHomePage(
               title: 'aboba',
             ),
       },
