@@ -1,26 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:ukrmowazno/ui/mowa_tests.dart';
-import 'package:ukrmowazno/ui/main_screen.dart';
+import 'package:flutter/services.dart';
+import 'package:ukrmowazno/page/home_page.dart';
 
-void main() {
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
+
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  static const String title = 'Quiz App';
+
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: true,
-      initialRoute: '/m',
-      routes: {
-        '/m': (context) => const MainScreen(),
-        '/t': (context) => const MyHomePage(
-              title: 'aboba',
-            ),
-      },
-    );
-  }
+  Widget build(BuildContext context) => MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: title,
+        theme: ThemeData(primarySwatch: Colors.deepOrange),
+        home: const HomePage(), // CategoryPage(category: categories.first),
+      );
 }
