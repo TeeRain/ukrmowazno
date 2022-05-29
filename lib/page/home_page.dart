@@ -44,7 +44,7 @@ class HomePage extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           children: [
             const SizedBox(height: 10),
-            buildCategories(),
+            buildCategories(context),
           ],
         ),
       );
@@ -59,8 +59,8 @@ class HomePage extends StatelessWidget {
         ],
       );
 
-  Widget buildCategories() => SizedBox(
-        height: 300,
+  Widget buildCategories(BuildContext context) => SizedBox(
+        height: MediaQuery.of(context).size.height,
         child: GridView(
             primary: false,
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:ukrmowazno/model/category.dart';
 import 'package:ukrmowazno/model/kind_of_ex.dart';
-import 'package:ukrmowazno/page/category_page.dart';
 import 'package:ukrmowazno/page/test_page.dart';
 import 'package:ukrmowazno/widget/options_widget.dart';
 
