@@ -3,58 +3,58 @@ import '../model/question.dart';
 
 final questionsPunct = [
   Question(
-    text: 'Which planet is the hottest in the solar system?',
+    text: 'Саня клоун?',
     options: [
-      const Option(code: 'A', text: 'Earth', isCorrect: false),
-      const Option(code: 'B', text: 'Venus', isCorrect: true),
-      const Option(code: 'C', text: 'Jupiter', isCorrect: false),
-      const Option(code: 'D', text: 'Saturn', isCorrect: false),
+      const Option(code: 'A', text: 'ТАк', isCorrect: false),
+      const Option(code: 'B', text: 'Так', isCorrect: true),
+      const Option(code: 'C', text: '100%', isCorrect: false),
+      const Option(code: 'D', text: 'ні(я далбайоб)', isCorrect: false),
     ],
-    solution: 'Venus is the hottest planet in the solar system',
+    solution: 'Саня клоун і це факт',
   ),
   Question(
-    text: 'How many molecules of oxygen does ozone have?',
+    text: 'Олег топовий програміст?',
     options: [
-      const Option(code: 'A', text: '1', isCorrect: false),
-      const Option(code: 'B', text: '2', isCorrect: false),
-      const Option(code: 'C', text: '5', isCorrect: false),
-      const Option(code: 'D', text: '3', isCorrect: true),
+      const Option(code: 'A', text: 'Ні', isCorrect: false),
+      const Option(code: 'B', text: 'Ні', isCorrect: false),
+      const Option(code: 'C', text: 'Ні', isCorrect: false),
+      const Option(code: 'D', text: 'Ні', isCorrect: true),
     ],
-    solution: 'Ozone have 3 molecules of oxygen',
+    solution: 'Олег говнокодєр',
   ),
   Question(
-    text: 'What is the symbol for potassium?',
+    text: 'пакмен топова гра?',
     options: [
-      const Option(code: 'A', text: 'N', isCorrect: false),
-      const Option(code: 'B', text: 'S', isCorrect: false),
-      const Option(code: 'C', text: 'P', isCorrect: false),
-      const Option(code: 'D', text: 'K', isCorrect: true),
+      const Option(code: 'A', text: 'Да', isCorrect: false),
+      const Option(code: 'B', text: 'Да', isCorrect: false),
+      const Option(code: 'C', text: 'Так', isCorrect: false),
+      const Option(code: 'D', text: 'Точняк', isCorrect: true),
     ],
-    solution: 'The symbol for potassium is K',
+    solution: 'Пакмен це топ',
   ),
   Question(
     text:
-        'Which of these plays was famously first performed posthumously after the playwright committed suicide?',
+        'Люблю черешні',
     options: [
       const Option(code: 'A', text: '4.48 Psychosis', isCorrect: true),
       const Option(code: 'B', text: 'Hamilton', isCorrect: false),
       const Option(code: 'C', text: "Much Ado About Nothing", isCorrect: false),
       const Option(code: 'D', text: "The Birthday Party", isCorrect: false),
     ],
-    solution: '4.48 Psychosis is the correct answer for this question',
+    solution: 'Черешні топчик',
   ),
   Question(
-    text: 'What year was the very first model of the iPhone released?',
+    text: 'Клуюніка це шик',
     options: [
       const Option(code: 'A', text: '2005', isCorrect: false),
       const Option(code: 'B', text: '2008', isCorrect: false),
       const Option(code: 'C', text: '2007', isCorrect: true),
       const Option(code: 'D', text: '2006', isCorrect: false),
     ],
-    solution: 'iPhone was first released in 2007',
+    solution: 'так',
   ),
   Question(
-    text: ' Which element is said to keep bones strong?',
+    text: 'Ясуо мейнери найкращі люди в світі',
     options: [
       const Option(code: 'A', text: 'Carbon', isCorrect: false),
       const Option(code: 'B', text: 'Oxygen', isCorrect: false),
@@ -65,16 +65,16 @@ final questionsPunct = [
         isCorrect: false,
       ),
     ],
-    solution: 'Calcium is the element responsible for keeping the bones strong',
+    solution: 'ЯСУО МЕЙН',
   ),
   Question(
-    text: 'What country won the very first FIFA World Cup in 1930?',
+    text: 'what',
     options: [
       const Option(code: 'A', text: 'Brazil', isCorrect: false),
       const Option(code: 'B', text: 'Germany', isCorrect: false),
       const Option(code: 'C', text: 'Italy', isCorrect: false),
       const Option(code: 'D', text: 'Uruguay', isCorrect: true),
     ],
-    solution: 'Uruguay was the first country to win world cup',
+    solution: 'fucks',
   ),
 ];
