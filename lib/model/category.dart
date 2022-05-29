@@ -5,7 +5,6 @@ import 'question.dart';
 
 class Category {
   final String categoryName;
-  final String description;
   final Color backgroundColor;
   final IconData icon;
   final List<Question> questions;
@@ -13,7 +12,6 @@ class Category {
   Category({
     required this.questions,
     required this.categoryName,
-    this.description = '',
     this.backgroundColor = Colors.orange,
     this.icon = FontAwesomeIcons.question,
   });

@@ -3,8 +3,8 @@ import 'package:ukrmowazno/data/categories.dart';
 import 'package:ukrmowazno/data/user.dart';
 import 'package:ukrmowazno/widget/category_header_widget.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class TestPage extends StatelessWidget {
+  const TestPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) => Scaffold(

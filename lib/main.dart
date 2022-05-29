@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:ukrmowazno/page/home_page.dart';
+import 'package:ukrmowazno/page/test_page.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,6 +22,6 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: title,
         theme: ThemeData(primarySwatch: Colors.deepOrange),
-        home: const HomePage(), // CategoryPage(category: categories.first),
+        home: const TestPage(), // CategoryPage(category: categories.first),
       );
 }

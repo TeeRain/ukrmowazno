@@ -1,7 +1,7 @@
 import '../model/option.dart';
 import '../model/question.dart';
 
-final questions = [
+final questionsPunct = [
   Question(
     text: 'Which planet is the hottest in the solar system?',
     options: [
