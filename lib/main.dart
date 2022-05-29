@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:ukrmowazno/data/categories.dart';
-import 'package:ukrmowazno/page/category_page.dart';
 import 'package:ukrmowazno/page/test_page.dart';
 
 Future main() async {
@@ -18,7 +16,6 @@ Future main() async {
 
 class MyApp extends StatelessWidget {
   static const String title = 'Quiz App';
-
   const MyApp({Key? key}) : super(key: key);
 
   @override

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ukrmowazno/model/category.dart';
 import 'package:ukrmowazno/page/category_page.dart';
+import 'package:ukrmowazno/widget/options_widget.dart';
 
 class CategoryHeaderWidget extends StatelessWidget {
   final Category category;
@@ -13,9 +14,12 @@ class CategoryHeaderWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => GestureDetector(
-        onTap: () => Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => CategoryPage(category: category),
-        )),
+        onTap: () => {
+          Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => CategoryPage(category: category),
+          )),
+          resultScore = 0
+        },
         child: Container(
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(

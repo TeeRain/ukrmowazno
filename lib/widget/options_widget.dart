@@ -3,10 +3,11 @@ import 'package:ukrmowazno/model/option.dart';
 import 'package:ukrmowazno/model/question.dart';
 import 'package:ukrmowazno/utils.dart';
 
+int resultScore = 0;
+
 class OptionsWidget extends StatelessWidget {
   final Question question;
   final ValueChanged<Option> onClickedOption;
-
   const OptionsWidget({
     Key? key,
     required this.question,
@@ -28,7 +29,10 @@ class OptionsWidget extends StatelessWidget {
     final color = getColorForOption(option, question);
 
     return GestureDetector(
-      onTap: () => onClickedOption(option),
+      onTap: () => {
+        onClickedOption(option),
+        if (option.isCorrect == true) {resultScore++, print(resultScore)}
+      },
       child: Container(
         padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
@@ -73,7 +77,6 @@ class OptionsWidget extends StatelessWidget {
 
   Color getColorForOption(Option option, Question question) {
     final isSelected = option == question.selectedOption;
-
     if (!isSelected) {
       return Colors.grey.shade200;
     } else {

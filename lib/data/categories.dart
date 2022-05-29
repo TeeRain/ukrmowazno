@@ -6,7 +6,7 @@ import 'package:ukrmowazno/data/questions_simp.dart';
 import 'package:ukrmowazno/data/questions_synt.dart';
 import 'package:ukrmowazno/model/category.dart';
 
-final categories = <Category>[
+final testCategory = <Category>[
   Category(
     questions: questionsLangPart,
     categoryName: 'Частини мови',

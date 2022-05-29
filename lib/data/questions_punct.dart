@@ -33,8 +33,7 @@ final questionsPunct = [
     solution: 'Пакмен це топ',
   ),
   Question(
-    text:
-        'Люблю черешні',
+    text: 'Люблю черешні',
     options: [
       const Option(code: 'A', text: '4.48 Psychosis', isCorrect: true),
       const Option(code: 'B', text: 'Hamilton', isCorrect: false),
