@@ -3,38 +3,38 @@ import '../model/question.dart';
 
 final questionsSimp = [
   Question(
-    text: 'Which planet is the hottest in the solar system?',
+    text: 'GEnsy [eqijdvdfvddfdv',
     options: [
       const Option(code: 'A', text: 'Earth', isCorrect: false),
       const Option(code: 'B', text: 'Venus', isCorrect: true),
       const Option(code: 'C', text: 'Jupiter', isCorrect: false),
       const Option(code: 'D', text: 'Saturn', isCorrect: false),
     ],
-    solution: 'Venus is the hottest planet in the solar system',
+    solution: 'fsvdfvdffvdfdfdfvdfd',
   ),
   Question(
-    text: 'How many molecules of oxygen does ozone have?',
+    text: '121f31f1313f1f31f1313f13ff1f311f3f13',
     options: [
       const Option(code: 'A', text: '1', isCorrect: false),
       const Option(code: 'B', text: '2', isCorrect: false),
       const Option(code: 'C', text: '5', isCorrect: false),
       const Option(code: 'D', text: '3', isCorrect: true),
     ],
-    solution: 'Ozone have 3 molecules of oxygen',
+    solution: 'sdm;lvm;lrvwj;lv2jojvew;owjev',
   ),
   Question(
-    text: 'What is the symbol for potassium?',
+    text: ';lsfmjipi3rjvjpo34jpopjijjpjpjjpjppjjjpo',
     options: [
       const Option(code: 'A', text: 'N', isCorrect: false),
       const Option(code: 'B', text: 'S', isCorrect: false),
       const Option(code: 'C', text: 'P', isCorrect: false),
       const Option(code: 'D', text: 'K', isCorrect: true),
     ],
-    solution: 'The symbol for potassium is K',
+    solution: 'The symbol for potassium is Ksdfv423v34v3v43v',
   ),
   Question(
     text:
-        'Which of these plays was famously first performed posthumously after the playwright committed suicide?',
+        'SUKAywright committed suicide?',
     options: [
       const Option(code: 'A', text: '4.48 Psychosis', isCorrect: true),
       const Option(code: 'B', text: 'Hamilton', isCorrect: false),
@@ -44,17 +44,17 @@ final questionsSimp = [
     solution: '4.48 Psychosis is the correct answer for this question',
   ),
   Question(
-    text: 'What year was the very first model of the iPhone released?',
+    text: 'ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo',
     options: [
       const Option(code: 'A', text: '2005', isCorrect: false),
       const Option(code: 'B', text: '2008', isCorrect: false),
       const Option(code: 'C', text: '2007', isCorrect: true),
       const Option(code: 'D', text: '2006', isCorrect: false),
     ],
-    solution: 'iPhone was first released in 2007',
+    solution: 'Mossers sucks',
   ),
   Question(
-    text: ' Which element is said to keep bones strong?',
+    text: 'Propod loh',
     options: [
       const Option(code: 'A', text: 'Carbon', isCorrect: false),
       const Option(code: 'B', text: 'Oxygen', isCorrect: false),
@@ -65,16 +65,16 @@ final questionsSimp = [
         isCorrect: false,
       ),
     ],
-    solution: 'Calcium is the element responsible for keeping the bones strong',
+    solution: 'Calcium sdvsdvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvis the element responsible for keeping the bones strong',
   ),
   Question(
-    text: 'What country won the very first FIFA World Cup in 1930?',
+    text: '1',
     options: [
       const Option(code: 'A', text: 'Brazil', isCorrect: false),
       const Option(code: 'B', text: 'Germany', isCorrect: false),
       const Option(code: 'C', text: 'Italy', isCorrect: false),
       const Option(code: 'D', text: 'Uruguay', isCorrect: true),
     ],
-    solution: 'Uruguay was the first country to win world cup',
+    solution: '-------------------------------------',
   ),
 ];
