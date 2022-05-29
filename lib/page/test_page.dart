@@ -10,12 +10,11 @@ class TestPage extends StatelessWidget {
   Widget build(BuildContext context) => Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          leading: const Icon(Icons.menu),
           backgroundColor: Colors.transparent,
           elevation: 0,
           title: const Text('ЄМова'),
           bottom: PreferredSize(
-            preferredSize: const Size.fromHeight(30),
+            preferredSize: const Size.fromHeight(40),
             child: Container(
               padding: const EdgeInsets.all(16),
               alignment: Alignment.centerLeft,
@@ -31,17 +30,13 @@ class TestPage extends StatelessWidget {
               ),
             ),
           ),
-          actions: const [
-            Icon(Icons.search),
-            SizedBox(width: 12),
-          ],
         ),
         body: ListView(
           physics: const BouncingScrollPhysics(),
           padding: const EdgeInsets.all(16),
           children: [
             const SizedBox(height: 10),
-            buildCategories(),
+            buildCategories(context),
           ],
         ),
       );
@@ -56,8 +51,8 @@ class TestPage extends StatelessWidget {
         ],
       );
 
-  Widget buildCategories() => SizedBox(
-        height: 300,
+  Widget buildCategories(BuildContext context) => SizedBox(
+        height: MediaQuery.of(context).size.height,
         child: GridView(
           primary: false,
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
