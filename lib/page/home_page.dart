@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:ukrmowazno/data/categories.dart';
+import 'package:ukrmowazno/data/kind_of_exs.dart';
 import 'package:ukrmowazno/data/user.dart';
 import 'package:ukrmowazno/widget/category_header_widget.dart';
+
+import '../widget/kind_header_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -59,16 +62,14 @@ class HomePage extends StatelessWidget {
   Widget buildCategories() => SizedBox(
         height: 300,
         child: GridView(
-          primary: false,
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            childAspectRatio: 4 / 3,
-            crossAxisSpacing: 10,
-            mainAxisSpacing: 10,
-          ),
-          children: testCategory
-              .map((category) => CategoryHeaderWidget(category: category))
-              .toList(),
-        ),
+            primary: false,
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              childAspectRatio: 4 / 3,
+              crossAxisSpacing: 10,
+              mainAxisSpacing: 10,
+            ),
+            children:
+                kinds.map((kind) => KindHeaderWidget(kindOfEx: kind)).toList()),
       );
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:ukrmowazno/page/home_page.dart';
 import 'package:ukrmowazno/page/test_page.dart';
 
 Future main() async {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
 
         initialRoute: '/',
         routes: {
-          '/': (context) => const TestPage(),
+          '/': (context) => const HomePage(),
         }, // CategoryPage(category: categories.first),
       );
 }

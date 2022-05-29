@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:ukrmowazno/data/categories.dart';
 import 'package:ukrmowazno/data/user.dart';
+import 'package:ukrmowazno/model/kind_of_ex.dart';
 import 'package:ukrmowazno/widget/category_header_widget.dart';
 
 class TestPage extends StatelessWidget {
+  final KindOfEx kind;
   const TestPage({
     Key? key,
+    required this.kind,
   }) : super(key: key);
 
   @override
