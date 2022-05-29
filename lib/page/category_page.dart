@@ -41,7 +41,6 @@ class _CategoryPageState extends State<CategoryPage> {
     return AppBar(
         title: Text(widget.category.categoryName),
         actions: const [
-          Icon(Icons.filter_alt_outlined),
           SizedBox(width: 20),
         ],
         flexibleSpace: Container(
