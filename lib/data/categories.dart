@@ -11,24 +11,24 @@ final categories = <Category>[
     questions: questionsLangPart,
     categoryName: 'Частини мови',
     backgroundColor: Colors.blue,
-    icon: FontAwesomeIcons.rocket,
+    icon: FontAwesomeIcons.book,
   ),
   Category(
     questions: questionsSimp,
     categoryName: 'Спрощення',
     backgroundColor: Colors.orange,
-    icon: FontAwesomeIcons.atom,
+    icon: FontAwesomeIcons.scissors,
   ),
   Category(
     questions: questionsSynt,
     categoryName: 'Синтаксис',
     backgroundColor: Colors.purple,
-    icon: FontAwesomeIcons.squareRootVariable,
+    icon: FontAwesomeIcons.pen,
   ),
   Category(
     questions: questionsPunct,
     categoryName: 'Пунктуація',
     backgroundColor: Colors.lightBlue,
-    icon: FontAwesomeIcons.dna,
+    icon: FontAwesomeIcons.exclamation,
   ),
 ];

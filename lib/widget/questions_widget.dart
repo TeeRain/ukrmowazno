@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ukrmowazno/model/category.dart';
 import 'package:ukrmowazno/model/option.dart';
 import 'package:ukrmowazno/model/question.dart';
+import 'package:ukrmowazno/page/end_test_page.dart';
 import 'package:ukrmowazno/widget/options_widget.dart';
 
 class QuestionsWidget extends StatelessWidget {
@@ -26,11 +27,12 @@ class QuestionsWidget extends StatelessWidget {
         itemBuilder: (context, index) {
           final question = category.questions[index];
 
-          return buildQuestion(question: question);
+          return buildQuestion(context: context, question: question);
         },
       );
 
   Widget buildQuestion({
+    required BuildContext context,
     required Question question,
   }) =>
       Container(
@@ -45,7 +47,7 @@ class QuestionsWidget extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             const Text(
-              'Choose your answer from below',
+              'Виберіть правильну відповідь',
               style: TextStyle(fontStyle: FontStyle.italic, fontSize: 16),
             ),
             const SizedBox(height: 32),
@@ -70,7 +72,7 @@ class QuestionsWidget extends StatelessWidget {
                           shadowColor: Colors.transparent,
                           //make color or elevated button transparent
                         ),
-                        onPressed: () {},
+                        onPressed: () => EndTestPage().showAlertDialog(context),
                         child: const Padding(
                           padding: EdgeInsets.only(
                             top: 10,
