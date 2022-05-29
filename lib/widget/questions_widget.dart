@@ -41,7 +41,7 @@ class QuestionsWidget extends StatelessWidget {
             const SizedBox(height: 32),
             Text(
               question.text,
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
             ),
             const SizedBox(height: 8),
             const Text(
@@ -55,6 +55,29 @@ class QuestionsWidget extends StatelessWidget {
                 onClickedOption: onClickedOption,
               ),
             ),
+            Align(
+                alignment: Alignment.bottomRight,
+                child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      gradient: const LinearGradient(
+                          colors: [Colors.deepOrange, Colors.purple]),
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                    child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.transparent,
+                          onSurface: Colors.transparent,
+                          shadowColor: Colors.transparent,
+                          //make color or elevated button transparent
+                        ),
+                        onPressed: () {},
+                        child: const Padding(
+                          padding: EdgeInsets.only(
+                            top: 10,
+                            bottom: 10,
+                          ),
+                          child: Text("Завершити тестування"),
+                        ))))
           ],
         ),
       );
