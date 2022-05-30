@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ukrmowazno/model/option.dart';
-import 'package:ukrmowazno/model/question.dart';
 import 'package:ukrmowazno/widget/options_widget.dart';
 
 class EndTestPage {

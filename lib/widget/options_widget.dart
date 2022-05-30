@@ -49,7 +49,7 @@ class OptionsWidget extends StatelessWidget {
     );
   }
 
-  Widget buildAnswer(Option option) => Container(
+  Widget buildAnswer(Option option) => SizedBox(
         height: 50,
         child: Row(children: [
           Text(
