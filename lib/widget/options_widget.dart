@@ -31,6 +31,7 @@ class OptionsWidget extends StatelessWidget {
     return GestureDetector(
       onTap: () => {
         onClickedOption(option),
+        // ignore: avoid_print
         if (option.isCorrect == true) {resultScore++, print(resultScore)}
       },
       child: Container(
@@ -42,7 +43,6 @@ class OptionsWidget extends StatelessWidget {
         child: Column(
           children: [
             buildAnswer(option),
-            buildSolution(question.selectedOption, option),
           ],
         ),
       ),
@@ -63,17 +63,6 @@ class OptionsWidget extends StatelessWidget {
           )
         ]),
       );
-
-  Widget buildSolution(Option? solution, Option answer) {
-    if (solution == answer) {
-      return Text(
-        question.solution,
-        style: const TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
-      );
-    } else {
-      return Container();
-    }
-  }
 
   Color getColorForOption(Option option, Question question) {
     final isSelected = option == question.selectedOption;

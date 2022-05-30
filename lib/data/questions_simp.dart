@@ -10,7 +10,6 @@ final questionsSimp = [
       const Option(code: 'C', text: 'Jupiter', isCorrect: false),
       const Option(code: 'D', text: 'Saturn', isCorrect: false),
     ],
-    solution: 'fsvdfvdffvdfdfdfvdfd',
   ),
   Question(
     text: '121f31f1313f1f31f1313f13ff1f311f3f13',
@@ -20,7 +19,6 @@ final questionsSimp = [
       const Option(code: 'C', text: '5', isCorrect: false),
       const Option(code: 'D', text: '3', isCorrect: true),
     ],
-    solution: 'sdm;lvm;lrvwj;lv2jojvew;owjev',
   ),
   Question(
     text: ';lsfmjipi3rjvjpo34jpopjijjpjpjjpjppjjjpo',
@@ -30,18 +28,15 @@ final questionsSimp = [
       const Option(code: 'C', text: 'P', isCorrect: false),
       const Option(code: 'D', text: 'K', isCorrect: true),
     ],
-    solution: 'The symbol for potassium is Ksdfv423v34v3v43v',
   ),
   Question(
-    text:
-        'SUKAywright committed suicide?',
+    text: 'SUKAywright committed suicide?',
     options: [
       const Option(code: 'A', text: '4.48 Psychosis', isCorrect: true),
       const Option(code: 'B', text: 'Hamilton', isCorrect: false),
       const Option(code: 'C', text: "Much Ado About Nothing", isCorrect: false),
       const Option(code: 'D', text: "The Birthday Party", isCorrect: false),
     ],
-    solution: '4.48 Psychosis is the correct answer for this question',
   ),
   Question(
     text: 'ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo',
@@ -51,7 +46,6 @@ final questionsSimp = [
       const Option(code: 'C', text: '2007', isCorrect: true),
       const Option(code: 'D', text: '2006', isCorrect: false),
     ],
-    solution: 'Mossers sucks',
   ),
   Question(
     text: 'Propod loh',
@@ -65,7 +59,6 @@ final questionsSimp = [
         isCorrect: false,
       ),
     ],
-    solution: 'Calcium sdvsdvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvis the element responsible for keeping the bones strong',
   ),
   Question(
     text: '1',
@@ -75,6 +68,5 @@ final questionsSimp = [
       const Option(code: 'C', text: 'Italy', isCorrect: false),
       const Option(code: 'D', text: 'Uruguay', isCorrect: true),
     ],
-    solution: '-------------------------------------',
   ),
 ];

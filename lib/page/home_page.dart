@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ukrmowazno/data/categories.dart';
 import 'package:ukrmowazno/data/kind_of_exs.dart';
 import 'package:ukrmowazno/data/user.dart';
-import 'package:ukrmowazno/widget/category_header_widget.dart';
-
 import '../widget/kind_header_widget.dart';
 
 class HomePage extends StatelessWidget {

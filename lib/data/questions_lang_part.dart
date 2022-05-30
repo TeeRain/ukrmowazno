@@ -10,7 +10,6 @@ final questionsLangPart = [
       const Option(code: 'C', text: 'SATANA3', isCorrect: false),
       const Option(code: 'D', text: 'SATANA4', isCorrect: false),
     ],
-    solution: 'ochko',
   ),
   Question(
     text: 'Drums beating like thunder straight from Hell.',
@@ -20,7 +19,6 @@ final questionsLangPart = [
       const Option(code: 'C', text: 'SATANAh', isCorrect: false),
       const Option(code: 'D', text: 'SATANAsanja', isCorrect: true),
     ],
-    solution: 'straight from Hell',
   ),
   Question(
     text: 'Putin zdoch',
@@ -30,18 +28,17 @@ final questionsLangPart = [
       const Option(code: 'C', text: 'S', isCorrect: false),
       const Option(code: 'D', text: 'S', isCorrect: true),
     ],
-    solution: 'rusni pizda',
   ),
   Question(
-    text:
-        'kekw',
+    text: 'kekw',
     options: [
       const Option(code: 'A', text: '4.48 Psycsdg24ghosis', isCorrect: true),
       const Option(code: 'B', text: 'Hamiltddson', isCorrect: false),
-      const Option(code: 'C', text: "Much Ado Abodsfsdgut Nothing", isCorrect: false),
-      const Option(code: 'D', text: "The Birthday1121212112 Party", isCorrect: false),
+      const Option(
+          code: 'C', text: "Much Ado Abodsfsdgut Nothing", isCorrect: false),
+      const Option(
+          code: 'D', text: "The Birthday1121212112 Party", isCorrect: false),
     ],
-    solution: 'Trumpets are blaring, the times come round -',
   ),
   Question(
     text: 'Satan is here to claim His ground!',
@@ -51,7 +48,6 @@ final questionsLangPart = [
       const Option(code: 'C', text: 'bljat', isCorrect: true),
       const Option(code: 'D', text: 'pizdez', isCorrect: false),
     ],
-    solution: 'iPhone govno',
   ),
   Question(
     text: ' Theres an earth thats green, theres an earth thats free,',
@@ -65,7 +61,6 @@ final questionsLangPart = [
         isCorrect: false,
       ),
     ],
-    solution: 'f-word',
   ),
   Question(
     text: 'Theres a place for you and a place for me',
@@ -75,6 +70,5 @@ final questionsLangPart = [
       const Option(code: 'C', text: 'miggas', isCorrect: false),
       const Option(code: 'D', text: 'g', isCorrect: true),
     ],
-    solution: 'cum inside me',
   ),
 ];

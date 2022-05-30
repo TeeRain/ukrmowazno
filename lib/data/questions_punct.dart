@@ -10,7 +10,6 @@ final questionsPunct = [
       const Option(code: 'C', text: '100%', isCorrect: false),
       const Option(code: 'D', text: 'ні(я далбайоб)', isCorrect: false),
     ],
-    solution: 'Саня клоун і це факт',
   ),
   Question(
     text: 'Олег топовий програміст?',
@@ -20,7 +19,6 @@ final questionsPunct = [
       const Option(code: 'C', text: 'Ні', isCorrect: false),
       const Option(code: 'D', text: 'Ні', isCorrect: true),
     ],
-    solution: 'Олег говнокодєр',
   ),
   Question(
     text: 'пакмен топова гра?',
@@ -30,7 +28,6 @@ final questionsPunct = [
       const Option(code: 'C', text: 'Так', isCorrect: false),
       const Option(code: 'D', text: 'Точняк', isCorrect: true),
     ],
-    solution: 'Пакмен це топ',
   ),
   Question(
     text: 'Люблю черешні',
@@ -40,7 +37,6 @@ final questionsPunct = [
       const Option(code: 'C', text: "Much Ado About Nothing", isCorrect: false),
       const Option(code: 'D', text: "The Birthday Party", isCorrect: false),
     ],
-    solution: 'Черешні топчик',
   ),
   Question(
     text: 'Клуюніка це шик',
@@ -50,7 +46,6 @@ final questionsPunct = [
       const Option(code: 'C', text: '2007', isCorrect: true),
       const Option(code: 'D', text: '2006', isCorrect: false),
     ],
-    solution: 'так',
   ),
   Question(
     text: 'Ясуо мейнери найкращі люди в світі',
@@ -64,7 +59,6 @@ final questionsPunct = [
         isCorrect: false,
       ),
     ],
-    solution: 'ЯСУО МЕЙН',
   ),
   Question(
     text: 'what',
@@ -74,6 +68,5 @@ final questionsPunct = [
       const Option(code: 'C', text: 'Italy', isCorrect: false),
       const Option(code: 'D', text: 'Uruguay', isCorrect: true),
     ],
-    solution: 'fucks',
   ),
 ];

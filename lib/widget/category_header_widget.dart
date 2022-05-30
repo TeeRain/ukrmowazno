@@ -18,7 +18,7 @@ class CategoryHeaderWidget extends StatelessWidget {
           Navigator.of(context).push(MaterialPageRoute(
             builder: (context) => CategoryPage(category: category),
           )),
-          resultScore = 0
+          resultScore = 0,
         },
         child: Container(
           padding: const EdgeInsets.all(12),
