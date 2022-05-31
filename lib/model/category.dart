@@ -15,4 +15,11 @@ class Category {
     this.backgroundColor = Colors.orange,
     this.icon = FontAwesomeIcons.question,
   });
+
+  Category copyWith({List<Question>? questions}) => Category(
+        questions: questions ?? this.questions,
+        categoryName: categoryName,
+        icon: icon,
+        backgroundColor: backgroundColor,
+      );
 }

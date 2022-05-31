@@ -1,15 +1,48 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:ukrmowazno/data/categories.dart';
 import 'package:ukrmowazno/data/user.dart';
+import 'package:ukrmowazno/model/categories_enum.dart';
+import 'package:ukrmowazno/model/category.dart';
 import 'package:ukrmowazno/model/kind_of_ex.dart';
+import 'package:ukrmowazno/sql/database.dart';
 import 'package:ukrmowazno/widget/category_header_widget.dart';
 
-class TestPage extends StatelessWidget {
+class TestPage extends StatefulWidget {
   final KindOfEx kind;
   const TestPage({
     Key? key,
     required this.kind,
   }) : super(key: key);
+
+  @override
+  State<TestPage> createState() => _TestPageState();
+}
+
+class _TestPageState extends State<TestPage> {
+  List<Category> categories = testCategory;
+  bool _isLoading = true;
+
+  @override
+  void initState() {
+    _loadQuestions();
+    super.initState();
+  }
+
+  Future<void> _loadQuestions() async {
+    for (int i = 0; i < CategoriesEnum.values.length; i++) {
+      final category = CategoriesEnum.values[i];
+
+      final questions = await DatabaseService()
+          .getRandomQuestionsByCategory(category: category);
+
+      categories[i] = categories[i].copyWith(questions: questions);
+    }
+
+    setState(() {
+      _isLoading = false;
+    });
+  }
 
   @override
   Widget build(BuildContext context) => Scaffold(
@@ -36,13 +69,18 @@ class TestPage extends StatelessWidget {
             ),
           ),
         ),
-        body: ListView(
-          physics: const BouncingScrollPhysics(),
-          padding: const EdgeInsets.all(16),
-          children: [
-            const SizedBox(height: 10),
-            buildCategories(context),
-          ],
+        body: AnimatedSwitcher(
+          duration: const Duration(milliseconds: 400),
+          child: _isLoading
+              ? const SpinKitRing(color: Colors.deepOrange)
+              : ListView(
+                  physics: const BouncingScrollPhysics(),
+                  padding: const EdgeInsets.all(16),
+                  children: [
+                    const SizedBox(height: 10),
+                    buildCategories(context),
+                  ],
+                ),
         ),
       );
 
