@@ -57,10 +57,11 @@ class OptionsWidget extends StatelessWidget {
             style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
           ),
           const SizedBox(width: 12),
-          Text(
+          Flexible(
+              child: Text(
             option.text,
-            style: const TextStyle(fontSize: 20),
-          )
+            style: const TextStyle(fontSize: 16),
+          ))
         ]),
       );
 

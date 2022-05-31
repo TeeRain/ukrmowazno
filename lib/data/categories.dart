@@ -8,16 +8,16 @@ import 'package:ukrmowazno/model/category.dart';
 
 final testCategory = <Category>[
   Category(
-    questions: questionsLangPart,
-    categoryName: 'Частини мови',
-    backgroundColor: Colors.blue,
-    icon: FontAwesomeIcons.book,
-  ),
-  Category(
     questions: questionsSimp,
     categoryName: 'Спрощення',
     backgroundColor: Colors.orange,
     icon: FontAwesomeIcons.scissors,
+  ),
+  Category(
+    questions: questionsLangPart,
+    categoryName: 'Частини мови',
+    backgroundColor: Colors.blue,
+    icon: FontAwesomeIcons.book,
   ),
   Category(
     questions: questionsSynt,
