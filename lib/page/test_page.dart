@@ -70,14 +70,22 @@ class _TestPageState extends State<TestPage> {
           ),
         ),
         body: AnimatedSwitcher(
-          duration: const Duration(milliseconds: 400),
+          duration: const Duration(milliseconds: 800),
           child: _isLoading
               ? const SpinKitRing(color: Colors.deepOrange)
               : ListView(
-                  physics: const BouncingScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   padding: const EdgeInsets.all(16),
                   children: [
                     const SizedBox(height: 10),
+                    Image.asset(
+                      "assets/smoke-mucky.gif.gif",
+                      height: 200.0,
+                      width: 200.0,
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
                     buildCategories(context),
                   ],
                 ),

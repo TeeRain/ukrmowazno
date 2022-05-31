@@ -37,10 +37,18 @@ class HomePage extends StatelessWidget {
           ],
         ),
         body: ListView(
-          physics: const BouncingScrollPhysics(),
+          physics: const NeverScrollableScrollPhysics(),
           padding: const EdgeInsets.all(16),
           children: [
             const SizedBox(height: 10),
+            Image.asset(
+              "assets/green_fuhrer.gif",
+              height: 200.0,
+              width: 200.0,
+            ),
+            const SizedBox(
+              height: 15,
+            ),
             buildCategories(context),
           ],
         ),
