@@ -61,7 +61,7 @@ class HomePage extends StatelessWidget {
         child: GridView(
             primary: false,
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
+              crossAxisCount: 1,
               childAspectRatio: 4 / 3,
               crossAxisSpacing: 10,
               mainAxisSpacing: 10,
