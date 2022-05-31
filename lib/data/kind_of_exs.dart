@@ -10,21 +10,21 @@ final kinds = <KindOfEx>[
     backgroundColor: Colors.blue,
     icon: FontAwesomeIcons.question,
   ),
-  KindOfEx(
-    categories: testCategory,
-    categoryName: 'Симулятор ЗНО',
-    backgroundColor: Colors.orange,
-    icon: FontAwesomeIcons.check,
-  ),
-  KindOfEx(
-    categories: testCategory,
-    categoryName: 'Підлови себе',
-    backgroundColor: Colors.purple,
-    icon: FontAwesomeIcons.heart,
-  ),
-  KindOfEx(
-      categories: testCategory,
-      categoryName: 'Власне висловлювання',
-      backgroundColor: Colors.lightBlue,
-      icon: FontAwesomeIcons.pencil),
+  // KindOfEx(
+  //   categories: testCategory,
+  //   categoryName: 'Симулятор ЗНО',
+  //   backgroundColor: Colors.orange,
+  //   icon: FontAwesomeIcons.check,
+  // ),
+  // KindOfEx(
+  //   categories: testCategory,
+  //   categoryName: 'Підлови себе',
+  //   backgroundColor: Colors.purple,
+  //   icon: FontAwesomeIcons.heart,
+  // ),
+  // KindOfEx(
+  //     categories: testCategory,
+  //     categoryName: 'Власне висловлювання',
+  //     backgroundColor: Colors.lightBlue,
+  //     icon: FontAwesomeIcons.pencil),
 ];
