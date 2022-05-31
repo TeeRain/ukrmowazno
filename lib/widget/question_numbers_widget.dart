@@ -17,7 +17,7 @@ class QuestionNumbersWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     const double padding = 16;
 
-    return Container(
+    return SizedBox(
       height: 50,
       child: ListView.separated(
         physics: const BouncingScrollPhysics(),

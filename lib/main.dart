@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:ukrmowazno/page/home_page.dart';
+import 'package:ukrmowazno/sql/database.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -11,6 +12,9 @@ Future main() async {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
   ));
+  // Init of database service, since it's singleton, we can use its instance
+  // just using Database().someMethod() in any place of our app
+  DatabaseService();
   runApp(const MyApp());
 }
 
