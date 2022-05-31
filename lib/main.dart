@@ -12,7 +12,7 @@ Future main() async {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
   ));
-  // Init of database service, since it's singleton, we can use it's instance
+  // Init of database service, since it's singleton, we can use its instance
   // just using Database().someMethod() in any place of our app
   DatabaseService();
   runApp(const MyApp());
