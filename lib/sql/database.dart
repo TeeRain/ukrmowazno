@@ -96,7 +96,7 @@ class DatabaseService {
     ''', [category.value]);
 
     final questionsAmount =
-        amount <= questions.length ? amount : questions.length;
+        amount < questions.length ? amount : questions.length;
     final Random random = Random();
 
     List<int> ids = [];
@@ -104,7 +104,7 @@ class DatabaseService {
       if (ids.length == questionsAmount) {
         break;
       } else {
-        if (random.nextBool()) {
+        if (random.nextBool() || questionsAmount == questions.length) {
           ids.add(questions[i]['question_id'] as int);
         }
       }
