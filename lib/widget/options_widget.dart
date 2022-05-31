@@ -52,10 +52,6 @@ class OptionsWidget extends StatelessWidget {
   Widget buildAnswer(Option option) => SizedBox(
         height: 50,
         child: Row(children: [
-          Text(
-            option.code,
-            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
-          ),
           const SizedBox(width: 12),
           Flexible(
               child: Text(

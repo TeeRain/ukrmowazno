@@ -68,7 +68,6 @@ class DatabaseService {
         if (opt['question_id'] == question['question_id']) {
           final optionObj = Option(
             text: opt['answer_text'].toString(),
-            code: opt['answer_score'].toString(),
             isCorrect: opt['answer'] as int == 1,
           );
 

@@ -58,3 +58,5 @@ flutter:
   uses-material-design: true
   assets:
     - assets/application.db
+    - assets/smoke-mucky.gif.gif
+    - assets/green_fuhrer.gif

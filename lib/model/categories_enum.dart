@@ -15,7 +15,7 @@ extension CategoriesEnumExtension on CategoriesEnum {
       case CategoriesEnum.syntax:
         return 'Синтаксис';
       case CategoriesEnum.punctuation:
-        return 'Пунктуац?я';
+        return 'Пунктуацiя';
     }
   }
 }

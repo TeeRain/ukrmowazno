@@ -43,12 +43,12 @@ class QuestionsWidget extends StatelessWidget {
             const SizedBox(height: 32),
             Text(
               question.text,
-              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
             ),
             const SizedBox(height: 8),
             const Text(
               'Виберіть правильну відповідь',
-              style: TextStyle(fontStyle: FontStyle.italic, fontSize: 16),
+              style: TextStyle(fontStyle: FontStyle.italic, fontSize: 14),
             ),
             const SizedBox(height: 32),
             Expanded(

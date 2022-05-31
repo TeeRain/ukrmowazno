@@ -6,7 +6,7 @@ import 'package:ukrmowazno/model/kind_of_ex.dart';
 final kinds = <KindOfEx>[
   KindOfEx(
     categories: testCategory,
-    categoryName: 'Тести',
+    categoryName: 'Розпочати тестування',
     backgroundColor: Colors.blue,
     icon: FontAwesomeIcons.question,
   ),
